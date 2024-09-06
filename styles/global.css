@@ -1,0 +1,91 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+  /* reseta os valores da font */
+  font: inherit;
+
+  --webkit-font-smoothing: antialiased;
+  --mos--osx-smoothing: grayscale;
+}
+
+:root {
+  /* Produto */
+  --brand-color-primary: #F7B733;
+  --brand-color-secondary: #FC4A1A;
+  --brand-gradient: linear-gradient(var(--brand-color-secondary), var(--brand-color-primary));
+
+  /* Base */
+  --bg-color: #09090B;
+  --surface-color: #18181B;
+  --stroke-color: #27272A;
+  --text-color-secondary: #A1A1AA;
+  --text-color-primary: #F4F4F5;
+
+  /* Tipografia */
+  --ff: "Inter", system-ui, sans-serif;
+  --fw-base: 400;
+  --fw-md: 600;
+  --fw-bold: 800;
+
+  --fs-2xl: 2.5rem;
+  --fs-xl: 1.5rem;
+  --fs-lg: 1.25rem;
+  --fs-base: 1rem;
+  --fs-sm: .875rem;
+}
+
+html {
+  font-family: var(--ff);
+  font-weight: var(--fw-base);
+  font-size: var(--fs-base);
+  line-height: 1.6;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+h1, h2, h3, body {
+  color: var(--text-color-primary);
+}
+
+h1, h2, h3 {
+  line-height: 1.2;
+  font-weight: var(--fw-bold);
+  letter-spacing: -0.04em;
+}
+
+h1 {
+  font-size: var(--fs-2xl);
+}
+
+h2 {
+  font-size: var(--fs-xl);
+}
+
+h3 {
+  font-size: var(--fs-lg);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*  */
+ul[role="list"] {
+  list-style: none;
+}
+
+@media (width >= 80em) {
+  :root {
+    --fs-2xl: 4rem;
+    --fs-xl: 3rem;
+    --fs-lg: 2rem;
+  }  
+}
