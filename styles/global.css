@@ -17,7 +17,7 @@
   /* Produto */
   --brand-color-primary: #F7B733;
   --brand-color-secondary: #FC4A1A;
-  --brand-gradient: linear-gradient(var(--brand-color-secondary), var(--brand-color-primary));
+  --brand-gradient: linear-gradient(90deg, var(--brand-color-secondary) 0%, var(--brand-color-primary) 100%);
 
   /* Base */
   --bg-color: #09090B;
@@ -29,7 +29,7 @@
   /* Tipografia */
   --ff: "Inter", system-ui, sans-serif;
   --fw-base: 400;
-  --fw-md: 600;
+  --fw-md: 500;
   --fw-bold: 800;
 
   --fs-2xl: 2.5rem;

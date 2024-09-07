@@ -10,16 +10,16 @@
   <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
-  <header>
-    <div class="container py-base even-columns"> 
-      <img src="./assets/Logo.svg" alt="Logomarca.">
-      <nav>
-        <a href="#">Conheça o app</a>
-        <a href="#">Funcionalidades</a>
-        <a href="#">Planos e preços</a>
-        <button type="button">Baixar agora</button>
-      </nav>
-    </div>
+  <header class="flex gap-16">
+    <button class="btn btn-sm">Label</button>
+    <a href="#" class="btn btn-md">Label</a>
+    <span class="btn btn-lg">Label</span>
+  </header>
+
+  <header class="flex gap-16">
+    <button class="btn btn-sm" aria-label="Label"></button>
+    <a href="#" class="btn btn-md" aria-label="Label"></a>
+    <span class="btn btn-lg" aria-label="Label"></span>
   </header>
 </body>
 </html>

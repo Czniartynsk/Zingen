@@ -1,0 +1,68 @@
+.btn {
+  border: 0;
+  cursor: pointer;
+
+  color: var(--btn-color);
+  --btn-bg-color: transparent;
+  background: var(--btn-bg-color);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+
+  border-radius: .5rem;
+  line-height: 1.5rem;
+  font-weight: var(--fw-md);
+
+  --btn-color: var(--bg-color);
+  --btn-bg-color: var(--text-color-primary);
+}
+
+.btn:hover {
+  --btn-bg-color: var(--brand-gradient);
+}
+
+.btn-lg {
+  padding: 1rem 2rem;
+  font-size: 1.125rem;
+}
+
+.btn-md {
+  padding: .75rem 1.5rem;
+  font-size: var(--fs-base);
+}
+
+.btn-sm {
+  padding: .5rem 1rem;
+  font-size: var(--fs-sm);
+}
+
+/* .secondary {
+  --btn-bg-color: var(--brand-gradient);
+} */
+
+/* .secondary */
+.btn[aria-label] {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background: var(--bg-color);
+    border-radius: inherit;
+    inset: .09375rem;
+  }
+
+  &::after {
+    content: attr(aria-label);
+    background: var(--btn-bg-color);
+    
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    color: transparent;
+
+    position: relative;
+  }
+}
