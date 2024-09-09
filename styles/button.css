@@ -21,6 +21,10 @@
 
 .btn:hover {
   --btn-bg-color: var(--brand-gradient);
+  background-clip: initial;
+  -webkit-background-clip: initial;
+  -moz-background-clip: initial;
+  color: var(--bg-color);
 }
 
 .btn-lg {
@@ -36,6 +40,18 @@
 .btn-sm {
   padding: .5rem 1rem;
   font-size: var(--fs-sm);
+}
+
+@media (width >= 80rem) {
+  .btn-md {
+    padding: 1rem 2rem;
+    font-size: 1.125rem;
+  }
+
+  .btn-sm {
+    padding: .75rem 1.5rem;
+    font-size: var(--fs-base);
+  }
 }
 
 /* .secondary {

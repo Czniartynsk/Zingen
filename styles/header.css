@@ -1,7 +1,5 @@
-/* header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1.5rem 2rem;
-  background-color: var(--bg-color);
-} */
+header {
+  & a:first-child {
+    margin-right: auto;
+  }
+}
