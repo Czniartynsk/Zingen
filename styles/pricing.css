@@ -1,0 +1,116 @@
+#pricing {
+  --fs-price: 2rem;
+
+  & header {
+    text-align: center;
+  }
+
+  .cards {
+    margin-top: 2rem;
+  }
+
+  & h3 {
+    font-size: 1.25rem;
+    margin-top: 0;
+  }
+
+  & .card p {
+    margin-top: .25rem;
+  }
+
+  & zin-pricing {
+    display: block;
+    font: var(--fw-bold) var(--fs-price)/1.2 var(--ff);
+    margin-block: 1.5rem;
+  }
+
+  & zin-pricing small {
+    font: var(--fw-base) var(--fs-base)/1.25 var(--ff);
+    color: var(--text-color-secondary);
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  & .separator {
+    height: 1px;
+    margin-block: 2rem;
+    background: radial-gradient(var(--text-color-secondary), var(--surface-color) 70%);
+  }
+
+  & li {
+    color: var(--text-color-secondary);
+    background: url(../assets/icons/Check.svg) no-repeat;
+    padding-left: 1.75rem;
+  }
+
+  ul + small {
+    display: block;
+    margin-top: 1.5rem;
+    font: var(--fw-base) var(--fs-sm)/1.25rem var(--ff);
+    color: var(--text-color-secondary);
+  }
+
+  & .premium {
+    position: relative;
+    padding: 2px;
+
+    & h3 {
+      padding-top: 2rem;
+    }
+
+    & .card {
+      /* position: relative; */
+      /* border-color: transparent; */
+
+      & span {
+        position: absolute;
+        top: 1px;
+        left: 1px;
+        /* border-radius: 1.5rem 0 1.5rem 0; */
+        border-top-left-radius: 1.5rem;
+        border-bottom-right-radius: 1.5rem;
+        background: var(--brand-gradient);
+        padding-block: .75rem;
+        padding-inline: 2rem;
+        
+        color: var(--bg-color);
+        font: 600 .75rem/1rem var(--ff);
+        letter-spacing: .08em;
+        text-transform: uppercase;      
+      }
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      background: var(--brand-gradient);
+      inset: 0;
+      border-radius: 1.5rem;
+      z-index: -1;
+    }
+  }
+
+  @media (width >= 80rem) {
+    --fs-price: 2.5rem;
+
+    & header {
+      max-width: 50rem;
+      margin-inline: auto;
+    }
+
+    .btn-md {
+      padding: .75rem 1.5rem;
+      font-size: var(--fs-base);
+    }
+
+    & .premium .card {
+      padding-bottom: 6rem;
+
+      & .separator {
+        margin-block: 2.6rem;
+      }
+    }
+  }
+}

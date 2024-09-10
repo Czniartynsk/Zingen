@@ -10,3 +10,5 @@
 
 /* só importa se a tela for maior que 80rem */
 @import url(features.css) (width >= 80rem);
+
+@import url(pricing.css);

@@ -8,7 +8,7 @@
   }
   
   & h1 {
-    font-weight: 900;
+    /* font-weight: var(--fw-bold); */
     margin-bottom: .5rem;
   
     @media (width >= 80rem) {
