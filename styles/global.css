@@ -52,6 +52,9 @@ html {
   line-height: 1.6;
 
   overflow-x: hidden;
+
+  /* Faz com que a tela corra para o link ancora (deslize) */
+  scroll-behavior: smooth;
 }
 
 body {
